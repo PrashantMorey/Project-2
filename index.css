@@ -1,7 +1,7 @@
 .parent1{
     border: 2px solid lightgray;
     
-    height: 920px;
+    height: auto;
     margin: 0 auto; 
 }
 
@@ -138,7 +138,7 @@ a{
     padding-left: 6%;
     padding-right: 6%;
     background-color: #F7F7F7;
-    height: 800px;
+    height: auto;
 
   
   }
@@ -169,46 +169,25 @@ a{
   }
 
 
-  .task{
-    background-color: white;
-    border: 1px solid gray;
-    height: 168px;
-    width: 350px;
-    border-radius: 5px;
-    font-family: sans-serif;
-    position: relative;
-    bottom: 818px;
-    left: 280px;    
-  }
+
   hr{
     border: 0.5px solid rgb(230, 228, 228);
   }
   
   .h2{
+    display: inline-block;
     margin: 1px 10px;
     font-size: medium;
-    display: inline-block;
-    position: relative;
-    bottom: 3px;
 
   }
-  .heading3{
-    display: inline-block;
-  }
-  .cross{
-    display: inline-block;
-    margin-left: 54%;
-    margin-top: 12px;
 
-    font-size: 20px;
-    color: gray;
-  }
+
 .box1{
     margin-top: 20px;
 }
 
   .box2{
-    width: 310px;
+    width: 90%;
     height: 22px;
     display: flex; 
     align-items: center;
@@ -219,36 +198,27 @@ a{
     border-color: lightgray;
     background-color: #f7f7f7;
   }
-.button{
-    color: white;
-    background-color: #00A5EC;
-    padding: 7px 22px;
-    border: none;
-    border-radius: 2px;
-    margin: 20px 4px 12px 230px;
-    font-size: 12px;
-}
+
 .combine{
    display:flex;
-
+   justify-content:space-around;
    margin-top: 16px;
+   padding: 0 15%;
    
 }
-.back{
-  display: inline-block;
-}
+
 .arrow{
   background-color: black;
   color: white;
   border-radius: 50%;
   font-size: 15px;
   padding: 4px;
-  margin-left: 280px;
+
   position: relative;
   top: 5px;
 }
 .add{
-  display: inline-block;
+ 
 }
 .pluss{
   background-color: #00A5EC;
@@ -256,20 +226,25 @@ a{
   border-radius: 50%;
   font-size: 15px;
   padding: 6px;
-  margin-left: 120px;
+
   position: relative;
   top: 6px;
 }
+
+.inchild{
+ display: flex;
+ justify-content: center;
+ margin-top: 50px;
+}
 .child1{
-  height: 220px;
-  width: 320px;
+  height: 16em;
+  width: 22em;
   border: 1px solid lightgray;
   margin: 6px;
   border-radius: 5px;
   background-color: white; 
   font-family: sans-serif;
-  margin-top: 40px;
-  margin-left: 270px;
+
 }
 .child1:hover{
   transition: 0.2s ease-in-out;
@@ -281,6 +256,7 @@ a{
   font-size: 16px;
   text-align: center;
 }
+
 .parent4{
   background-color: #F7F7F7;
   height: 500px;
@@ -289,25 +265,163 @@ a{
   height: 920px;
   margin: 0 auto; 
 }
-  
 
+.index2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  
+}
+  .intask{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 25em;
+  }
 .task1{
   background-color: white;
   border: 1px solid gray;
-  height: 168px;
-  width: 350px;
+  height: 11rem;
+  width: 21em;
   border-radius: 5px;
   font-family: sans-serif;
-  position: relative;
-  bottom: 820px;
-  left: 250px;    
 }
-
-
 .parent5{
   filter: brightness(0.5) blur(1px);
+  width: 100%;
+
 }
 
 .index{
   filter: brightness(0.5) blur(1px);
+  width: 100%;
 }
+
+.task{
+  background-color: white;
+  border: 1px solid gray;
+  height: 11rem;
+  width: 22rem;
+  border-radius: 5px;
+  font-family: sans-serif;
+
+}
+.newone{
+
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-right: 0em;
+  position: absolute;
+  bottom: 300px;
+  left: 20px;
+}
+
+.Newtask{
+  display: flex;
+  width: 100%;
+  
+
+}
+.hecr{
+  display: flex;
+  justify-content:space-between;
+}
+.heading3{
+  
+  margin-top: 12px;
+}
+.cross{
+  margin-top: 12px;
+  margin-right: 6px;
+  font-size: 25px;
+  color: gray;
+}
+.button{
+  color: white;
+  background-color: #00A5EC;
+  padding: 7px 22px;
+  border: none;
+  border-radius: 2px;
+  margin: 20px 20px 12px  10px;
+  font-size: 0.5rem;
+}
+.left{
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width:600px) {
+  .parent3{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    background-color: #F7F7F7;
+    height: auto;
+
+  
+  }
+  .task{
+    background-color: white;
+    border: 1px solid gray;
+    height: 11rem;
+    width: 17rem;
+    border-radius: 5px;
+    font-family: sans-serif;
+  
+  }
+  .newone{
+
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-right: 0em;
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+  }
+  .combine{
+    display:flex;
+    justify-content:space-around;
+    margin-top: 16px;
+    padding: 0 0;
+    
+ }
+ .intask{
+  margin-left: 13%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 25em;
+}
+
+.parent5{
+  filter: brightness(0.5) blur(1px);
+  width: 100%;
+
+}
+.child1{
+  height: 12em;
+  width: 14em;
+  border: 1px solid lightgray;
+  margin: 6px;
+  border-radius: 5px;
+  background-color: white; 
+  font-family: sans-serif;
+
+}
+
+}
+
